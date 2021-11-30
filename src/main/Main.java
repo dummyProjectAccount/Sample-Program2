@@ -27,7 +27,7 @@ public class Main {
         ourCalc.multiply(2,3);
         ourCalc.subtract(3,2);
 
-        int num = 1000;
+        int num = 10;
 
         MatrixMath matrixMath = new MatrixMath();
 
