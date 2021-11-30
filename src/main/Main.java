@@ -1,6 +1,7 @@
 package main;
 
-import math.Calculator;
+import simpleArithmeticOp.Calculator;
+import util.MatrixMath;
 
 public class Main {
 
@@ -25,6 +26,21 @@ public class Main {
         ourCalc.divide(1, 2);
         ourCalc.multiply(2,3);
         ourCalc.subtract(3,2);
+
+        int num = 1000;
+
+        MatrixMath matrixMath = new MatrixMath();
+
+        double[][] firstMatrix = new double[num][num];
+        double[][] secondMatrix = new double[num][num];
+
+        for(int i = 0; i < num; i++) {
+            matrixMath.initializeMatrixInner(firstMatrix[i], num);
+            matrixMath.initializeMatrixInner(secondMatrix[i], num);
+        }
+
+        double[][] result = matrixMath.multiplyMatrices(firstMatrix, secondMatrix);
+
 
     }
 
